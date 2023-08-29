@@ -3,15 +3,15 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ping')
-        .setDescription('Return the bot\'s latency'),
+        .setDescription('查看機器人\的ping'),
     async execute(interaction, client) {
         const message = await interaction.deferReply({
             fetchReply: true,
         });
 
         const newEmbed = new EmbedBuilder()
-            .setTitle('Pong! 🏓')
-            .setDescription('Here\'s The API Latency And Client Ping Of The Bot:')
+            .setTitle('pong！ 🏓')
+            .setDescription('這個\' 機器人的 API 延遲和客戶端 Ping:')
             .setColor(0x32cd32)
             .setThumbnail("https://pin.it/79FZYNy")
             .setTimestamp(Date.now())
@@ -25,12 +25,12 @@ module.exports = {
             })
             .setFields([
                 {
-                    name: 'API Latency',
+                    name: 'Api延遲',
                     value: `${client.ws.ping}ms`,
                     inline: true
                 },
                 {
-                    name: 'Client Latency',
+                    name: '客服端Ping',
                     value: `${message.createdTimestamp - interaction.createdTimestamp}ms`,
                     inline: true
                 }

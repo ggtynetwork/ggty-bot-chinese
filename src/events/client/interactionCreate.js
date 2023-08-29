@@ -12,7 +12,7 @@ module.exports = {
             } catch (error) {
                 console.error(error);
                 await interaction.reply({
-                    content: '❌ | There was an error while executing this command!',
+                    content: '❌ | 執行此命令時出錯！!',
                     ephemeral: true
                 });
             }
@@ -20,7 +20,7 @@ module.exports = {
             const { buttons } = client;
             const { customId } = interaction;
             const button = buttons.get(customId);
-            if (!button) return new Error('There is no code for this button!');
+            if (!button) return new Error('此按鈕沒有代碼！');
 
             try {
                 await button.execute(interaction, client);

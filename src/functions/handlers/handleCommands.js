@@ -17,21 +17,21 @@ module.exports = (client) => {
                 const command = require(`../../commands/${folder}/${file}`);
                 commands.set(command.data.name, command);
                 commandArray.push(command.data.toJSON());
-                console.log(`✅ | Command: ${command.data.name} has been passed through the handler`);
+                console.log(`✅ | 指令: ${command.data.name} 已通過處理程序`);
             }
         }
 
-        const clientId = "1144930703046356993";
+        const clientId = "1146001449914990592";
         const guildId = "1143167739834417283";
         const rest = new REST({ version: '9' }).setToken(token);
         try {
-            console.log('🔄 | Started refreshing applications (/) commands.');
+            console.log('🔄 | 開始刷新應用程序 (/) 命令。');
 
             await rest.put(Routes.applicationCommands(clientId), {
                 body: client.commandArray,
             })
 
-            console.log('✅ | Successfully reloaded applications (/) commands.');
+            console.log('✅ | 成功重新加載應用程序 (/) 命令。');
         } catch (error) {
             console.error(error);
         }

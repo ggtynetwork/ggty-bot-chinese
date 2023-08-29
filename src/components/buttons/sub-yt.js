@@ -1,6 +1,6 @@
 module.exports = {
     data: {
-        name: 'sub-yt'
+        name: '訂閲油管'
     },
     async execute(interaction, client) {
         await interaction.reply({
