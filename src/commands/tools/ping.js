@@ -3,7 +3,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ping')
-        .setDescription('查看機器人\的ping'),
+        .setDescription('查看機器人的ping'),
     async execute(interaction, client) {
         const message = await interaction.deferReply({
             fetchReply: true,
@@ -11,7 +11,7 @@ module.exports = {
 
         const newEmbed = new EmbedBuilder()
             .setTitle('pong！ 🏓')
-            .setDescription('這個\' 機器人的 API 延遲和客戶端 Ping:')
+            .setDescription('這個機器人的 API 延遲和客戶端 Ping:')
             .setColor(0x32cd32)
             .setThumbnail("https://pin.it/79FZYNy")
             .setTimestamp(Date.now())
