@@ -1,1 +1,0 @@
-# ggty network bot chinese
