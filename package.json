@@ -1,0 +1,19 @@
+{
+  "name": "gg-bot",
+  "version": "1.0.0",
+  "description": "testing this code if is better than the original one",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "author": "ggty Network Team",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^2.0.1",
+    "chalk": "^5.3.0",
+    "discord-api-types": "^0.37.55",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security"
+  }
+}
