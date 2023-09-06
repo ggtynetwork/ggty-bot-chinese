@@ -2,12 +2,12 @@ const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('社交媒體')
-        .setDescription('我們的社交媒體'),
+        .setName('twitter')
+        .setDescription('twitter(X)'),
     async execute(interaction, client) {
         const embed = new EmbedBuilder()
-            .setTitle(`我們的社交媒體！`)
-            .setDescription(`我們的社交媒體列表：`)
+            .setTitle(`推特(X)`)
+            .setDescription(`我們的推特(X)!：`)
             .setColor(0xFFFFFF)
             .setImage(client.user.displayAvatarURL())
             .setThumbnail(client.user.displayAvatarURL())
