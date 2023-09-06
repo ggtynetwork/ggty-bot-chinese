@@ -21,13 +21,11 @@ module.exports = (client) => {
             }
         }
 
-        const clientId = "1144930703046356993";
-        const guildId = "1143167739834417283";
         const rest = new REST({ version: '9' }).setToken(token);
         try {
             console.log('🔄 | 開始刷新 (/) 指令.');
 
-            await rest.put(Routes.applicationCommands(clientId), {
+            await rest.put(Routes.applicationCommands(client_Id), { // clientId 已被刪除，原因是”它“已經在".env"裏面並把"它們“都拉過來這裏了
                 body: client.commandArray,
             })
 

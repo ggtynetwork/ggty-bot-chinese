@@ -11,7 +11,7 @@ module.exports = {
 
         const newEmbed = new EmbedBuilder()
             .setTitle('Pong! 🏓')
-            .setDescription('這是機器人的Api延遲和客服端延遲！:')
+            .setDescription('這是機器人的API延遲和客服端延遲！:')
             .setColor(0x32cd32)
             .setThumbnail("https://i.pinimg.com/originals/dd/c2/f1/ddc2f1044c2c0a7ee5f1861a4ad9e043.gif")
             .setTimestamp(Date.now())
@@ -25,8 +25,8 @@ module.exports = {
             })
             .setFields([
                 {
-                    name: 'Api延續',
-                    value: `${client.ws.ping}ms`,
+                    name: 'API延續',
+                    value: `${client.ws.ping} ms`,
                 },
                 {
                     name: '客戶端延遲',
